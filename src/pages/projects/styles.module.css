@@ -1,0 +1,17 @@
+.projects-wrap  {
+    margin-top: 40px;
+    display: block;
+    padding: 15px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 1150px) {
+    .projects {
+        display: block;
+    }
+}

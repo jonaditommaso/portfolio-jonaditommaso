@@ -1,0 +1,73 @@
+.skill {
+    width: 193px;
+    height: 100px;
+    box-shadow: 3px 4px 10px #727171;
+    border-radius: 7px;
+    padding: 5px;
+    transition: 0.3s;
+    margin: 1%;
+}
+
+.container-image-skill {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+
+.blur {
+    background: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(50px);
+}
+
+.skill:hover {
+    transform: scale(1.07);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    cursor: url('/assets/img/hammer.png'), pointer;
+}
+
+.skill:active {
+    cursor: url('/assets/img/hammer-click.png'), pointer;
+}
+
+.skill > img {
+    padding: 3px;
+}
+
+@keyframes tiembla {
+    0%  { -webkit-transform:rotateZ(-5deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+    100%{ -webkit-transform:rotateZ( 5deg); }
+}
+
+.shaking {
+    animation: tiembla 0.1s infinite;
+}
+
+.modal__title {
+    font-family: Montserrat, sans-serif;
+    padding: 7px;
+    text-align: center;
+}
+
+.button__modal > Button{
+    background-color: #86d9f3;
+    color: black;
+    border: solid 1px #86d9f3;
+    margin: 10px;
+    font-family: Montserrat, sans-serif;
+}
+
+@media (max-width: 500px) {
+
+    .skill {
+        margin-bottom: 15%;
+    }
+
+    .indications {
+        justify-content: center;
+        padding-right: 0%;
+    }
+}

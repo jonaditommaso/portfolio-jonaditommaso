@@ -1,0 +1,31 @@
+.footer {
+    display:flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    transition: 0.7s;
+}
+
+.footer-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-images > a {
+    margin: 15px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.footer-images > a:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+@media (max-width: 530px) {
+    .footer-images > a {
+      margin: 5px;
+    }
+}
