@@ -27,7 +27,6 @@ const Footer = () => {
                             loading="lazy"
                             decoding="async"
                         />
-
                     </a>
 
                     <a
