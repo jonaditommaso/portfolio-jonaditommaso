@@ -29,28 +29,30 @@
 }
 
 .link-clicked {
-    color: #ed6c87;
+    color: var(--primary-color);
 }
 
 .link:hover {
     transition: 0.4s;
     color: white;
-    /* text-decoration: underline solid #ed6c87; */
-    background: #ed6c87;
+    /* text-decoration: underline solid var(--primary-color); */
+    background: var(--primary-color);
     border-radius: 6px;
 }
 
 .home-icon {
     color: white;
     display: flex;
-    padding: 20px;
+    margin: 20px;
     transition: 0.3s;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .home-icon:hover {
     transition: 0.3s;
-    color: #ed6c87;
-    text-decoration: underline solid #ed6c87;
+    color: var(--primary-color);
+    text-decoration: underline solid var(--primary-color);
 }
 
 @media (max-width: 1150px) {

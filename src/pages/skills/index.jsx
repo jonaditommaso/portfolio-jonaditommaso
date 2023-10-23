@@ -22,7 +22,7 @@ const Skills = () => {
                 >
                     {!showAll ? 'I got tired, I want to see all of them!' : 'Restore crystals'}
                 </Button>
-                <BsInfoCircle onClick={() => setShowModal(true)} size={23} style={{cursor: 'pointer'}} />
+                <BsInfoCircle onClick={() => setShowModal(true)} size={23} style={{cursor: 'pointer', color: 'white'}} />
 
                 <Modal
                     title="Hit the crystals to see the skills!"

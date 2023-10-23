@@ -6,9 +6,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: grid;
-  background-color: #0f1525;
+  background-color: hsl(222, 47%, 19%);
+   /* #0f1525; */
    /* #204ea8; */
+   /* #0D1A2D */
+   /* hsl(232, 76%, 65%); */
+   /* hsl(222, 40%, 26%); */
+   /* hsl(222, 64%, 29%); */
+   /* hsl(222, 47%, 19%); */
   text-align: center;
+  --primary-color: #ED6C87; /*red*/
+  --secondary-color: #86D9F3;
 }
 
 code {
@@ -51,7 +59,7 @@ hr {
 .go-top-container {
   display: inline-flex;
   padding: 10px;
-  background-color: #86d9f3;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   cursor: pointer;
   /* box-shadow: 3px 4px 10px #979797; */

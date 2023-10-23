@@ -10,7 +10,8 @@ const Header = () => {
             <div className={styles['header']}>
 
                 <Link className={styles['home-icon']} href='/'>
-                    <AiFillHome style={{ fontSize: '30px' }}/>
+                    {/* <AiFillHome style={{ fontSize: '30px' }}/> */}
+                    {`<Jona />`}
                 </Link>
 
                 <div className={styles['links']}>

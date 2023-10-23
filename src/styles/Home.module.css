@@ -3,11 +3,23 @@
   display: flex;
   width: 80%;
   margin-bottom: 20px;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .home-left {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-top: 50px; */
+  /* margin-bottom: 50px; */
+}
+
+.container-image {
+  position: relative;
+}
+
+.chips {
+  position: absolute;
+  top: 0;
+  right: 10%;
 }
 
 .presentation {
@@ -43,7 +55,7 @@
 
 .job {
   font-size: 1.5em;
-  background-color: #ED6C87;
+  background-color: var(--primary-color);
   width: 300px;
   color: white;
   padding: 5px;
@@ -55,6 +67,10 @@
 
 .home-hr {
   margin-top: 25px;
+}
+
+.self-image {
+  align-self: center;
 }
 
 @keyframes bounce {

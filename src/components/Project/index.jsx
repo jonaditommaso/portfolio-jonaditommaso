@@ -3,7 +3,7 @@ import Image from 'next/image';
 import GoTopButton from '../GoTopButton';
 import styles from './styles.module.css'
 import SeeCodeButton from '../SeeCodeButton';
-import CustomButton from '../CustomButton';
+import LearnMoreButton from '../LearnMoreButton';
 
 const Project = ({image, alt, href, description, codeDirection, title}) => {
 
@@ -18,8 +18,7 @@ const Project = ({image, alt, href, description, codeDirection, title}) => {
                     height={300}
                     src={image}
                     alt={alt}
-                    loading="lazy"
-                    decoding="async"
+                    loading='eager'
                 />
             </a>
 
@@ -31,7 +30,7 @@ const Project = ({image, alt, href, description, codeDirection, title}) => {
 
             <div className={styles["project-buttons"]}>
                 <div className={styles["buttons"]}>
-                    <CustomButton handleClick={setShowDescription} />
+                    <LearnMoreButton handleClick={setShowDescription} />
                     <SeeCodeButton code={codeDirection} />
                 </div>
 

@@ -1,6 +1,12 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import PresentationCode from '@/components/PresentationCode'
+import Image from 'next/image'
+import InfoChip from '@/components/InfoChip'
+import { quickInfoChips } from '@/utils/quickInfoChips'
+import { Button } from '@mui/material'
+import PrimaryButton from '@/components/buttons/PrimaryButton'
+import SecondaryButton from '@/components/buttons/SecondaryButton'
 
 export default function Home() {
   return (
@@ -26,10 +32,39 @@ export default function Home() {
           <div className={styles['job']}>
             {`<Frontend Developer />`}
           </div>
+
+          <div>
+            <a
+              href="https://drive.google.com/file/d/15fqnxKnlVpBGr13rzQMSFPU66ZMf466p/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <PrimaryButton>
+                  DOWNLOAD RESUME
+              </PrimaryButton>
+            </a>
+            <SecondaryButton onClick={() => {}}>
+                HIRE VIA CODE
+            </SecondaryButton>
+          </div>
         </div>
 
-        <div className={styles['home-right']}>
-          <PresentationCode />
+        <div className={styles['container-image']}>
+          {/* <PresentationCode /> */}
+          <Image
+              className={styles['self-image']}
+              src="/assets/img/jonathan2.png"
+              alt="me"
+              // width={250} con jonathan.png
+              // height={321}
+              width={256}
+              height={382}
+          />
+          {quickInfoChips.map(data => (
+            <div key={data.key} style={data.style}>
+              <InfoChip data={data} />
+            </div>
+          ))}
         </div>
       </div>
     </>

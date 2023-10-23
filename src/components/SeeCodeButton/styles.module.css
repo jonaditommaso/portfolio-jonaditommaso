@@ -3,16 +3,6 @@
     margin-bottom: 12px;
 }
 
-.container-button > Button {
-    color: white;
-    background-color: #160e08;
-    font-family: Montserrat, sans-serif;
-}
-
-.container-button > Button:hover {
-    background-color: #ed6c87;
-}
-
 .see-code-text-button{
     margin-left: 5px;
 }

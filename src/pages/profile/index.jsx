@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CustomButton from '@/components/CustomButton';
+import LearnMoreButton from '@/components/LearnMoreButton';
 import GoTopButton from '@/components/GoTopButton';
 import Image from 'next/image';
 import styles from './styles.module.css'
@@ -12,7 +12,7 @@ const Profile = () => {
         <>
         <div className={styles["container"]}>
             <div className={styles["content"]}>
-                <div className={styles['container-profile-image']}>
+                {/* <div className={styles['container-profile-image']}>
                     <Image
                         className={styles["image"]}
                         src="/assets/img/jonathan.png"
@@ -22,8 +22,8 @@ const Profile = () => {
                         width={380}
                         height={450}
                     />
-                </div>
-                <CustomButton handleClick={setShowDescription} />
+                </div> */}
+                <LearnMoreButton handleClick={setShowDescription} />
             </div>
         </div>
 

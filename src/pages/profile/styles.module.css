@@ -10,13 +10,6 @@
     flex-direction: column;
 }
 
-.image {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-top: 50px;
-}
-
 .content > figcaption {
     color: black;
     width: 500px;
@@ -28,7 +21,7 @@
 
 .description {
     background-color: #eaf1fe;
-    border: solid 4px #ed6c87;
+    border: solid 4px var(--primary-color);
     flex-direction: column;
     padding: 15px;
     margin: 10%;
@@ -42,18 +35,12 @@
 }
 
 @media (max-width: 730px) {
-    .image {
-        width: 180px;
-        height: 270px;
-        margin-top: 45px;
-    }
-
     .text {
         font-size: 0.8em;
     }
 
     .description {
-        border: solid 3px #ed6c87;
+        border: solid 3px var(--primary-color);
         width: 220px;
         margin: auto;
         margin-top: 0px;
@@ -65,11 +52,6 @@
         margin: auto;
         width: 333px;
     }
-    .image {
-        width: 120px;
-        height: 200px;
-        margin-top: 20px;
-    }
 
     .text {
         font-size: 0.6em;
@@ -80,7 +62,7 @@
     }
 
     .description {
-        border: solid 2px #ed6c87;
+        border: solid 2px var(--primary-color);
         width: 220px;
         margin: auto;
         margin-top: 0px;

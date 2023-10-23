@@ -1,0 +1,31 @@
+.container-chip {
+    background-color: hsl(0, 7%, 94%);
+    /* min-width: 6.25rem;
+    max-height: 1.25rem; */
+    min-width: 90px;
+    height: 27px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    padding: 3px;
+}
+
+.main-data {
+    align-self: center;
+    font-size: 24px;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+.aside-data-container {
+    text-align: start;
+}
+
+.topic-data {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.description-data {
+    font-size: 11px;
+}

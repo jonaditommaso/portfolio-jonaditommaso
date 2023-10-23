@@ -1,9 +1,9 @@
-import { Button } from '@mui/material';
 import React from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import styles from './styles.module.css'
+import SecondaryButton from '../buttons/SecondaryButton';
 
-const SeeCodeButton = ({code}) => {
+const SeeCodeButton = ({ code }) => {
     return (
         <div className={styles['container']}>
             <a
@@ -12,10 +12,10 @@ const SeeCodeButton = ({code}) => {
                 rel="noreferrer"
             >
                 <div className={styles["container-button"]}>
-                    <Button  size="small" variant="contained">
+                    <SecondaryButton>
                         <AiFillGithub style={{ fontSize: '20px' }} />
                         <span className={styles["see-code-text-button"]}>SEE CODE</span>
-                    </Button>
+                    </SecondaryButton>
                 </div>
             </a>
         </div>
