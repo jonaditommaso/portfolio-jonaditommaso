@@ -3,9 +3,13 @@ import styles from './styles.module.css';
 import { styled } from '@mui/material/styles';
 
 const MuiButton = styled(Button)(({ theme }) => ({
-    color: 'white',
-    backgroundColor: '#160e08',
+    backgroundColor: 'white',
+    color: 'black',
+    margin: '10px',
     fontFamily: 'Montserrat, sans-serif',
+    '&:hover': {
+        transition: '0.3s'
+      },
 }));
 
 const PrimaryButton = ({ onClick, children }) => {
