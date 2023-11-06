@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import Button from '@mui/material/Button';
 import styles from './styles.module.css';
 
 const PrimaryButton = ({ onClick, children }) => {

@@ -10,7 +10,7 @@ export const projects = [
         description: POKEMON,
         href: "https://pokemon-search-game-jonaditommaso.vercel.app/",
         image: "/assets/img/pokemon.png",
-        title: "Search all the Pokémon you want, fight with them and remember the old days!",
+        title: "project_description_pokemon",
     },
     {
         alt: "amazon" ,

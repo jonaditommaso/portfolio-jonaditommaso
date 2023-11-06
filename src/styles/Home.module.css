@@ -7,10 +7,10 @@
   margin-top: 30px;
 }
 
-.home-left {
+/* .home-left { */
   /* margin-top: 50px; */
   /* margin-bottom: 50px; */
-}
+/* } */
 
 .container-image {
   position: relative;
@@ -56,7 +56,7 @@
 .job {
   font-size: 1.5em;
   background-color: var(--primary-color);
-  width: 300px;
+  width: 330px;
   color: white;
   padding: 5px;
   border-radius: 4px;

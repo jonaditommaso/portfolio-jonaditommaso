@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import Skill from '@/components/Skill';
-import { Button } from '@mui/material';
+import Button from '@mui/material/Button';
 import { BsInfoCircle } from 'react-icons/bs'
 import Modal from '@/components/Modal';
 import { skills } from '@/utils/skills';
 import styles from './styles.module.css';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Skills = () => {
     const [showAll, setShowAll] = useState(false);
     const [showModal, setShowModal] = useState(false);
+    const { t } = useTranslation(['common']);
 
-    const renderButton = () =>  <Button onClick={()=> setShowModal(false)}>Got it</Button>
+    const renderButton = () =>  <Button onClick={()=> setShowModal(false)}>{t('got_it')}</Button>
 
     return (
         <>
@@ -20,12 +23,12 @@ const Skills = () => {
                     variant="outlined"
                     onClick={()=> setShowAll(!showAll)}
                 >
-                    {!showAll ? 'I got tired, I want to see all of them!' : 'Restore crystals'}
+                    {!showAll ? t('see_all_skills') : t('restore_crystals')}
                 </Button>
                 <BsInfoCircle onClick={() => setShowModal(true)} size={23} style={{cursor: 'pointer', color: 'white'}} />
 
                 <Modal
-                    title="Hit the crystals to see the skills!"
+                    title={t('info_crystals')}
                     actions={renderButton()}
                     open={showModal}
                 />
@@ -52,3 +55,15 @@ const Skills = () => {
 }
 
 export default Skills;
+
+export async function getStaticProps({ locale }) {
+    try {
+      return {
+        props: {
+          ...(await serverSideTranslations(locale, ['common'])),
+        },
+      };
+    } catch (error) {
+      console.error('Check this error:', error);
+    }
+  }

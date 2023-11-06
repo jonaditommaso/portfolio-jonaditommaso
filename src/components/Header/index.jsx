@@ -3,8 +3,11 @@ import Link from "next/link";
 import { AiFillHome } from 'react-icons/ai'
 import styles from './styles.module.css'
 import NavigationLinks from "./NavigationLinks";
+import { useTranslation } from "next-i18next";
 
 const Header = () => {
+    const { t } = useTranslation(['common']);
+
     return (
         <div>
             <div className={styles['header']}>
@@ -22,7 +25,7 @@ const Header = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <span>RESUME</span>
+                        <span>{t('resume')}</span>
                     </a>
                 </div>
             </div>

@@ -3,7 +3,7 @@ export const quickInfoChips = [
         description: 'experience',
         key: 'years',
         mainData: '3',
-        topic: 'Years',
+        topic: 'years',
         style: {
             position: 'absolute',
             // top: 0,
@@ -12,10 +12,10 @@ export const quickInfoChips = [
         }
     },
     {
-        description: 'with React',
-        key: 'proyects',
+        description: 'with_react',
+        key: 'projects',
         mainData: '13',
-        topic: 'Proyects',
+        topic: 'projects',
         style: {
             position: 'absolute',
             // top: '15%',
@@ -24,10 +24,10 @@ export const quickInfoChips = [
         }
     },
     {
-        description: 'known and used',
+        description: 'known_and_used',
         key: 'technologies',
         mainData: '20+',
-        topic: 'Technologies',
+        topic: 'technologies',
         style: {
             position: 'absolute',
             // top: '60%',

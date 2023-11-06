@@ -4,10 +4,12 @@ import GoTopButton from '../GoTopButton';
 import styles from './styles.module.css'
 import SeeCodeButton from '../SeeCodeButton';
 import LearnMoreButton from '../LearnMoreButton';
+import { useTranslation } from 'next-i18next';
 
 const Project = ({image, alt, href, description, codeDirection, title}) => {
 
     const [showDescription, setShowDescription] = useState('none');
+    const { t } = useTranslation(['common']);
 
     return (
         <div className={styles["project"]}>
@@ -24,7 +26,7 @@ const Project = ({image, alt, href, description, codeDirection, title}) => {
 
             <div>
                 <p className={styles["project-title"]}>
-                    {title}
+                    {t(title)}
                 </p>
             </div>
 
