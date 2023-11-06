@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 const PrimaryButton = ({ onClick, children }) => {
 
     return (
-        <Button size="small" variant="outlined" onClick={onClick} className={styles['primary']}>
+        <Button size="small" variant="outlined" onClick={onClick} className={styles['primary-portfolio-button']}>
             {children}
         </Button>
     );

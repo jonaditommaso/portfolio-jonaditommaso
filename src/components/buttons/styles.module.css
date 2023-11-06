@@ -1,4 +1,4 @@
-.primary {
+.primary-portfolio-button {
     background-color: white;
     color: black;
     border: solid 1px var(--secondary-color);
@@ -6,23 +6,23 @@
     font-family: Montserrat, sans-serif;
 }
 
-.primary:hover {
+.primary-portfolio-button:hover {
     transition: 0.3s;
     background-color: var(--secondary-color);
 }
 
-.secondary {
+.secondary-portfolio-button {
     color: white;
     background-color: #160e08;
     font-family: Montserrat, sans-serif;
 }
 
-.secondary:hover {
+.secondary-portfolio-button:hover {
     background-color: var(--primary-color);
 }
 
 @media (max-width: 455px) {
-    .primary {
+    .primary-portfolio-button {
         margin: 3px;
         padding: 5px;
     }
