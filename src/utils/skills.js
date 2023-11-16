@@ -36,6 +36,40 @@ export const skills = [
       height: 70,
     },
     {
+      icon: "next",
+      figcaption: "NEXT JS",
+      width: 110,
+      height: 80,
+    },
+    {
+      icon: "graphql",
+      figcaption: "GRAPHQL",
+      width: 70,
+      height: 70,
+    },
+    {
+      icon: "jest",
+      figcaption: "JEST",
+      width: 85,
+      height: 75,
+    },
+    {
+      icon: "docker",
+      figcaption: "DOCKER",
+      height: 70,
+    },
+    {
+      icon: "kubernetes",
+      figcaption: "KUBERNETES",
+      width: 130,
+      height: 70,
+    },
+    {
+      icon: "git",
+      figcaption: "GIT",
+      height: 70,
+    },
+    {
       icon: "mongodb",
       figcaption: "MONGO DB",
       width: 100,
@@ -53,9 +87,7 @@ export const skills = [
       icon: "express",
       figcaption: "EXPRESS",
       width: 110,
-      height: 65,
-      marginB: "5%",
-      marginT: "0%",
+      height: 80,
     },
     {
       icon: "node",
@@ -68,29 +100,12 @@ export const skills = [
       figcaption: "SQL",
       width: 110,
       marginT: "14%",
+      marginB: "4%",
     },
     {
       icon: "mysql",
       figcaption: "MYSQL",
       width: 100,
-      height: 70,
-    },
-    {
-      icon: "jest",
-      figcaption: "JEST",
-      width: 85,
-      height: 75,
-    },
-    {
-      icon: "next",
-      figcaption: "NEXT JS",
-      width: 110,
-      height: 70,
-    },
-    {
-      icon: "graphql",
-      figcaption: "GRAPHQL",
-      width: 70,
       height: 70,
     },
     {
@@ -106,11 +121,6 @@ export const skills = [
       height: 70,
     },
     {
-      icon: "git",
-      figcaption: "GIT",
-      height: 70,
-    },
-    {
       icon: "sass",
       figcaption: "SASS",
       height: 72,
@@ -119,16 +129,6 @@ export const skills = [
       icon: "material-ui",
       figcaption: "MATERIAL-UI",
       width: 70,
-    },
-    {
-      icon: "bootstrap",
-      figcaption: "BOOTSTRAP",
-      width: 109,
-    },
-    {
-      icon: "react-bootstrap",
-      figcaption: "REACT BOOTSTRAP",
-      height: 70,
     },
     {
       icon: "styled",
